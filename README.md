@@ -20,3 +20,14 @@ TODO:
     
 - setup chef-clients that pull from the above chef server. 
 - setup proper knife settings and (maybe) a dev vm. 
+
+
+- for chefClient:
+
+   - after running ```knife configure -i``` on chefServer, run something like
+
+   ``` knife bootstrap 192.168.33.2 --sudo -x vagrant -i ~/.vagrant/unsecure_private_key ```
+
+   to bootstrap chefClient.
+
+
